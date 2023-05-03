@@ -2,7 +2,7 @@ import Head from "next/head";
 // import styles from '@/styles/Home.module.css'
 import React, { useState } from "react";
 import style from './index.module.css';
-import Image from "next/image";
+// import Image from "next/image";
 
 export default function Home() {
   const [counter, setCounter] = useState(0);
@@ -26,11 +26,14 @@ export default function Home() {
     if (response.status !== 200) {
       throw data.error || new Error(`Request failed with status ${response.status}`);
     }
+    setResult(data.result);
     setCounter(counter + 1);
     setAnimalInput('');
   }
   catch (e) {
   console.error(e)
+  alert(e);
+
   }
   }
   return (
