@@ -50,7 +50,6 @@ export default function Home() {
       <main className={style.main}>
         <h1> Name My Pet </h1>
         <div className="iconRow">
-          {/* <img src="/favicon.ico" alt="Duck icon" className={style.icon}  /> */}
           <FontAwesomeIcon icon={faCat} className={style.icon} />
           <FontAwesomeIcon icon={faDog} className={style.icon} />
           <FontAwesomeIcon icon={faFish} className={style.icon} />
